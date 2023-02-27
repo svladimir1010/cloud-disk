@@ -15,9 +15,9 @@ const filePathMiddleware = require('./middleware/filepath.middleware')
 const cors = require('cors')
 
 
-app.use(cors({
-  origin: '*'
-}));
+// app.use(cors({
+//   origin: '*'
+// }));
 
 app.use(fileUpload({}))
 app.use(corsMiddleware)
