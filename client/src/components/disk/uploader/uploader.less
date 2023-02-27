@@ -1,0 +1,70 @@
+@import "../../../utils/colors";
+
+.uploader {
+  height: 300px;
+  width: 300px;
+  position: fixed;
+  background-color: @font-color;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: @background-color;
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    border: 1px solid @font-color;
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.upload-file {
+  background-color: @background-color;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 5px 10px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress-bar {
+    height: .95rem;
+    border-radius: 8px;
+    background-color: @font-color;
+    display: flex;
+    margin: 3px 0;
+  }
+
+  &__remove {
+    height: fit-content;
+    border: 1px solid @font-color;
+    padding: 1px 3px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  &__upload-bar {
+    background-color: green;
+    border-radius: 8px;
+  }
+
+  &__percent {
+    color: @background-color;
+    left: 50%;
+    position: absolute;
+  }
+}
